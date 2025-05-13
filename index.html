@@ -3,20 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional frontend development portfolio with projects, experience, and education"
+    />
     <title>Generic Portfolio | Home</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/icons/logo.svg" />
+    <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://www.davidrogaci.dev" />
+    <link rel="preconnect" href="https://github.com" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li>
-            <a href="index.html"
-              ><img src="assets/icons/logo.svg" alt="logo"
-            /></a>
+            <a href="index.html" aria-label="Go to home">
+              <img src="assets/icons/logo.svg" alt="logo" loading="lazy" />
+            </a>
           </li>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="pages/articles.html">Articles</a></li>
           <li><a href="pages/projects.html">Projects</a></li>
           <li><a href="pages/contact.html">Contact</a></li>
@@ -24,31 +30,49 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <h1>Frontend Developer</h1>
         <h2>
           I'm a frontend developer creating beautiful and functional websites.
         </h2>
       </section>
-      <section>
+      <section class="content">
         <article>
           <h2>Projects</h2>
           <ul>
             <li>
-              <a href="https://www.davidrogaci.dev">HTML Only Portfolio</a>
+              <a
+                href="https://www.davidrogaci.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit HTML Only Portfolio"
+                >HTML Only Portfolio</a
+              >
             </li>
             <li>
-              <a href="https://calculadora-prestamos-one.vercel.app/"
+              <a
+                href="https://calculadora-prestamos-one.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit Calculator"
                 >Calculator</a
               >
             </li>
             <li>
-              <a href="https://ecommerce-rodriguez.vercel.app/"
+              <a
+                href="https://ecommerce-rodriguez.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit Sneakers e-commerce"
                 >Sneakers e-commerce site</a
               >
             </li>
             <li>
-              <a href="https://jordan-1-retro-spider.vercel.app/"
+              <a
+                href="https://jordan-1-retro-spider.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit Product landing page"
                 >Product landing page</a
               >
             </li>
@@ -95,18 +119,18 @@
               <p>Computer Graphics</p>
             </li>
             <li>
-              <p>Database management systems</p>
+              <p>Database Management Systems</p>
             </li>
             <li>
-              <p>distributed database systems</p>
+              <p>Distributed Database Systems</p>
             </li>
             <li>
-              <p>discrect mathematics</p>
+              <p>Discrete Mathematics</p>
             </li>
           </ul>
         </article>
       </section>
-      <section>
+      <section class="testimonials">
         <h2>Reviews from my teachers</h2>
         <ol>
           <li>
