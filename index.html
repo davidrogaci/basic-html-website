@@ -1,167 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadatos básicos y configuración del documento -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metadatos SEO y descripción del sitio -->
     <meta
       name="description"
-      content="Professional frontend development portfolio with projects, experience, and education"
+      content="Professional frontend developer portfolio showcasing web development projects, work experience, and educational background. Specializing in HTML, CSS, and JavaScript."
     />
-    <title>Generic Portfolio | Home</title>
+    <meta
+      name="keywords"
+      content="frontend developer, web development, portfolio, HTML, CSS, JavaScript, React"
+    />
+    <meta name="author" content="Generic Portfolio" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Metadatos para compartir en redes sociales (Open Graph) -->
+    <meta
+      property="og:title"
+      content="Generic Portfolio | Frontend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Professional frontend developer portfolio showcasing web development projects and experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.davidrogaci.dev" />
+
+    <!-- Metadatos para Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Generic Portfolio | Frontend Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Professional frontend developer portfolio showcasing web development projects and experience."
+    />
+
+    <!-- Título y recursos externos -->
+    <title>Generic Portfolio | Frontend Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://www.davidrogaci.dev" />
     <link rel="preconnect" href="https://github.com" />
   </head>
-  <body>
+  <body class="container">
+    <!-- Encabezado con navegación principal -->
     <header>
       <nav aria-label="Main navigation">
-        <ul>
-          <li>
-            <a href="index.html" aria-label="Go to home">
-              <img src="assets/icons/logo.svg" alt="logo" loading="lazy" />
-            </a>
-          </li>
+        <a href="index.html" class="logo-link">
+          <img
+            src="assets/icons/logo.svg"
+            alt="logo"
+            loading="lazy"
+            class="logo"
+          />
+        </a>
+        <ul class="nav-links">
           <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="pages/articles.html">Articles</a></li>
           <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/articles.html">Articles</a></li>
           <li><a href="pages/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="hero">
-        <h1>Frontend Developer</h1>
+      <!-- Sección Hero - Presentación principal -->
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Frontend Developer</h1>
         <h2>
           I'm a frontend developer creating beautiful and functional websites.
         </h2>
       </section>
+
+      <!-- Contenido principal dividido en tres columnas -->
       <section class="content">
-        <article>
-          <h2>Projects</h2>
-          <ul>
-            <li>
-              <a
-                href="https://www.davidrogaci.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Visit HTML Only Portfolio"
-                >HTML Only Portfolio</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://calculadora-prestamos-one.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Visit Calculator"
-                >Calculator</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://ecommerce-rodriguez.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Visit Sneakers e-commerce"
-                >Sneakers e-commerce site</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://jordan-1-retro-spider.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Visit Product landing page"
-                >Product landing page</a
-              >
-            </li>
+        <!-- Columna 1: Lista de proyectos -->
+        <section class="projects-col">
+          <h2 id="projects-title">Projects</h2>
+          <ul class="projects-list">
+            <li>HTML Only Portfolio</li>
+            <li>Calculator</li>
+            <li>Sneakers e-commerce</li>
+            <li>Product landing page</li>
           </ul>
-        </article>
-        <article>
-          <h2>Work Experience</h2>
-          <h3>roadmad.sh</h3>
-          <p>Solved all the frontend projects</p>
-          <a href="roadmap.sh/u/davidrogaci">Visit my profile</a>
-        </article>
-        <article>
-          <h2>Open Source Contributions</h2>
-          <p>
-            Contributed to 50 open source projects. Made my own projects with
-            200 Github Stars.
-          </p>
-          <a href="https://github.com/davidrogaci">Visit my Github Profile</a>
-        </article>
-        <article>
-          <h2>Education</h2>
+        </section>
+
+        <!-- Columna 2: Experiencia laboral y trabajo open source -->
+        <section class="center-col">
+          <div class="experience-item">
+            <h2 id="experience-title">Work Experience</h2>
+            <h3>roadmad.sh</h3>
+            <p>Solved all the frontend projects</p>
+            <a href="roadmap.sh/u/davidrogaci" class="experience-link"
+              >Visit my profile</a
+            >
+          </div>
+          <div class="open-source">
+            <h2 id="open-source-title">Open Source Work</h2>
+            <p>
+              Contributed to 50 open source projects. Made my own projects with
+              200 Github Stars.
+            </p>
+            <a href="https://github.com/davidrogaci" class="github-link"
+              >Visit my Github Profile</a
+            >
+          </div>
+        </section>
+
+        <!-- Columna 3: Educación y cursos -->
+        <section class="education">
+          <h2 id="education-title">Education</h2>
           <p>
             Graduated with 3.76 out of 4 CPGA. Won Acme Hackathon. Organized 30
             sessions.
           </p>
           <h3>Courses I Took</h3>
-          <ul>
-            <li>
-              <p>Object Oriented Programming</p>
-            </li>
-            <li>
-              <p>Data Structures and Algorithms</p>
-            </li>
-            <li>
-              <p>Web Engineering</p>
-            </li>
-            <li>
-              <p>Artificial Intelligence</p>
-            </li>
-            <li>
-              <p>Human Computer Interaction</p>
-            </li>
-            <li>
-              <p>Computer Graphics</p>
-            </li>
-            <li>
-              <p>Database Management Systems</p>
-            </li>
-            <li>
-              <p>Distributed Database Systems</p>
-            </li>
-            <li>
-              <p>Discrete Mathematics</p>
-            </li>
+          <ul class="courses-list">
+            <li>Object Oriented Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Human Computer Interaction</li>
+            <li>Computer Graphics</li>
+            <li>Database Management Systems</li>
+            <li>Distributed Database Systems</li>
+            <li>Discrete Mathematics</li>
           </ul>
-        </article>
+        </section>
       </section>
-      <section class="testimonials">
-        <h2>Reviews from my teachers</h2>
-        <ol>
-          <li>
-            <p>
+
+      <!-- Sección de testimonios -->
+      <section class="testimonials" aria-labelledby="testimonials-title">
+        <h2 id="testimonials-title">Reviews from my teachers</h2>
+        <ol class="testimonials-list">
+          <li class="testimonial-item">
+            <blockquote>
               "An exceptional student who consistently goes beyond basic
               requirements. Their ability to solve complex problems and
               dedication to learning is truly impressive."
-            </p>
-            <h3>Prof. María González, Computer Science Department</h3>
+            </blockquote>
+            <cite>Prof. María González, Computer Science Department</cite>
           </li>
-          <li>
-            <p>
+          <li class="testimonial-item">
+            <blockquote>
               "Their work on the Web Development final project was outstanding.
               They demonstrated exceptional mastery of frontend technologies and
               great attention to user experience details."
-            </p>
-            <h3>Dr. Carlos Rodríguez, Web Engineering Professor</h3>
+            </blockquote>
+            <cite>Dr. Carlos Rodríguez, Web Engineering Professor</cite>
           </li>
-          <li>
-            <p>
+          <li class="testimonial-item">
+            <blockquote>
               "A brilliant mind with a promising future in software development.
               Their ability to lead teams and passion for innovation
               distinguishes them as an exceptional professional."
-            </p>
-            <h3>Dr. Ana Martínez, Software Engineering Program Director</h3>
+            </blockquote>
+            <cite>Dr. Ana Martínez, Software Engineering Program Director</cite>
           </li>
         </ol>
       </section>
     </main>
+
+    <!-- Pie de página -->
     <footer>
-      <p>Copyright 2025 Generic Portfolio</p>
+      <p>Made only for practice.</p>
     </footer>
   </body>
 </html>

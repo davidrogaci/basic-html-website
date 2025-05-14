@@ -1,85 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic metadata and document configuration -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generic Portfolio - Customer Reviews</title>
+
+    <!-- SEO metadata and site description -->
+    <meta
+      name="description"
+      content="Read customer reviews and testimonials about my web development services, including web design, app development, and digital consulting projects."
+    />
+    <meta
+      name="keywords"
+      content="customer reviews, testimonials, web development, web design, app development, digital consulting"
+    />
+    <meta name="author" content="Generic Portfolio" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Social media sharing metadata (Open Graph) -->
+    <meta property="og:title" content="Generic Portfolio | Customer Reviews" />
+    <meta
+      property="og:description"
+      content="Read customer reviews and testimonials about my web development services, including web design, app development, and digital consulting projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.davidrogaci.dev/reviews" />
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Generic Portfolio | Customer Reviews" />
+    <meta
+      name="twitter:description"
+      content="Read customer reviews and testimonials about my web development services, including web design, app development, and digital consulting projects."
+    />
+
+    <!-- Title and external resources -->
+    <title>Generic Portfolio | Customer Reviews</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="icon" href="../assets/icons/logo.svg" />
   </head>
-  <body>
+  <body class="container">
+    <!-- Main navigation header -->
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html"
-              ><img src="../assets/icons/logo.svg" alt="logo"
-            /></a>
-          </li>
+      <nav aria-label="Main navigation">
+        <a href="../index.html" class="logo-link">
+          <img
+            src="../assets/icons/logo.svg"
+            alt="logo"
+            loading="lazy"
+            class="logo"
+          />
+        </a>
+        <ul class="nav-links">
           <li><a href="../index.html">Home</a></li>
-          <li><a href="articles.html">Reviews</a></li>
+          <li><a href="articles.html" aria-current="page">Articles</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <h1>Customer Reviews</h1>
-      <section>
-        <h2>Maria Gonzalez - Web Design</h2>
-        <article>
-          <p class="date">Published on March 15, 2025</p>
-          <p class="rating">★★★★★</p>
-          <p>
-            "Incredible experience working with this team! The design of my
-            website exceeded all my expectations. The attention to detail and
-            constant communication made the entire process very smooth. I would
-            definitely recommend their services to anyone looking for a
-            professional website."
-          </p>
-        </article>
-      </section>
-      <section>
-        <h2>Carlos Rodriguez - App Development</h2>
-        <article>
-          <p class="date">Published on March 10, 2025</p>
-          <p class="rating">★★★★☆</p>
-          <p>
-            "The development of our mobile app was a success. The team
-            demonstrated great technical knowledge and adapted well to our
-            changing requirements. The only reason I'm not giving 5 stars is
-            because there were some minor delays in delivery, but the final
-            result was worth it."
-          </p>
-        </article>
-      </section>
-      <section>
-        <h2>Ana Martinez - Digital Consulting</h2>
-        <article>
-          <p class="date">Published on March 5, 2025</p>
-          <p class="rating">★★★★★</p>
-          <p>
-            "The digital consulting we received completely transformed our
-            online strategy. The insights and recommendations were precise and
-            effective. We have seen a significant increase in our web traffic
-            and conversions. An exceptional service!"
-          </p>
-        </article>
-      </section>
-      <section>
-        <h2>Juan Perez - Brand Redesign</h2>
-        <article>
-          <p class="date">Published on March 1, 2025</p>
-          <p class="rating">★★★★★</p>
-          <p>
-            "The brand redesign process was professional and meticulous. The
-            team perfectly understood our vision and transformed it into a
-            coherent and modern visual identity. The new image has received
-            excellent feedback from our clients."
-          </p>
-        </article>
-      </section>
+      <!-- Reviews container -->
+      <div class="reviews-container">
+        <!-- Review: Web Design -->
+        <section class="review-card">
+          <h2>Maria Gonzalez - Web Design</h2>
+          <article>
+            <time datetime="2025-03-15" class="date"
+              >Published on March 15, 2025</time
+            >
+            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              "Incredible experience working with this team! The design of my
+              website exceeded all my expectations. The attention to detail and
+              constant communication made the entire process very smooth. I
+              would definitely recommend their services to anyone looking for a
+              professional website."
+            </blockquote>
+          </article>
+        </section>
+
+        <!-- Review: App Development -->
+        <section class="review-card">
+          <h2>Carlos Rodriguez - App Development</h2>
+          <article>
+            <time datetime="2025-03-10" class="date"
+              >Published on March 10, 2025</time
+            >
+            <div class="rating" aria-label="4 out of 5 stars">★★★★☆</div>
+            <blockquote>
+              "The development of our mobile app was a success. The team
+              demonstrated great technical knowledge and adapted well to our
+              changing requirements. The only reason I'm not giving 5 stars is
+              because there were some minor delays in delivery, but the final
+              result was worth it."
+            </blockquote>
+          </article>
+        </section>
+
+        <!-- Review: Digital Consulting -->
+        <section class="review-card">
+          <h2>Ana Martinez - Digital Consulting</h2>
+          <article>
+            <time datetime="2025-03-05" class="date"
+              >Published on March 5, 2025</time
+            >
+            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              "The digital consulting we received completely transformed our
+              online strategy. The insights and recommendations were precise and
+              effective. We have seen a significant increase in our web traffic
+              and conversions. An exceptional service!"
+            </blockquote>
+          </article>
+        </section>
+
+        <!-- Review: Brand Redesign -->
+        <section class="review-card">
+          <h2>Juan Perez - Brand Redesign</h2>
+          <article>
+            <time datetime="2025-03-01" class="date"
+              >Published on March 1, 2025</time
+            >
+            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              "The brand redesign process was professional and meticulous. The
+              team perfectly understood our vision and transformed it into a
+              coherent and modern visual identity. The new image has received
+              excellent feedback from our clients."
+            </blockquote>
+          </article>
+        </section>
+      </div>
     </main>
-    <footer><p>Copyright 2025 Generic Portfolio</p></footer>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made only for practice.</p>
+    </footer>
   </body>
 </html>

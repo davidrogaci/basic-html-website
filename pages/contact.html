@@ -1,44 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic metadata and document configuration -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generic Portfolio - Contact</title>
+
+    <!-- SEO metadata and site description -->
+    <meta
+      name="description"
+      content="Contact me for web development services, including web design, app development, and digital consulting. Get in touch to discuss your project."
+    />
+    <meta
+      name="keywords"
+      content="contact, web development, web design, app development, digital consulting, project inquiry"
+    />
+    <meta name="author" content="Generic Portfolio" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Social media sharing metadata (Open Graph) -->
+    <meta property="og:title" content="Generic Portfolio | Contact" />
+    <meta
+      property="og:description"
+      content="Contact me for web development services, including web design, app development, and digital consulting. Get in touch to discuss your project."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.davidrogaci.dev/contact" />
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Generic Portfolio | Contact" />
+    <meta
+      name="twitter:description"
+      content="Contact me for web development services, including web design, app development, and digital consulting. Get in touch to discuss your project."
+    />
+
+    <!-- Title and external resources -->
+    <title>Generic Portfolio | Contact</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="icon" href="../assets/icons/logo.svg" />
   </head>
-  <body>
+  <body class="container">
+    <!-- Main navigation header -->
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html"
-              ><img src="../assets/icons/logo.svg" alt="logo"
-            /></a>
-          </li>
+      <nav aria-label="Main navigation">
+        <a href="../index.html" class="logo-link">
+          <img
+            src="../assets/icons/logo.svg"
+            alt="logo"
+            loading="lazy"
+            class="logo"
+          />
+        </a>
+        <ul class="nav-links">
           <li><a href="../index.html">Home</a></li>
-          <li><a href="articles.html">Articles</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <h1>Contact</h1>
-      <form action="submit">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" />
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" />
-        <label for="select">Select</label>
-        <select name="select" id="select">
-          <option value="Important">Important</option>
-          <option value="Medium">Medium</option>
-          <option value="Low">Low</option>
-        </select>
-        <button type="submit">Submit</button>
+      <!-- Contact form -->
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            placeholder="Enter the subject"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Enter your message"
+          ></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
       </form>
     </main>
-    <footer><p>Copyright 2025 Generic Portfolio</p></footer>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made only for practice.</p>
+    </footer>
   </body>
 </html>

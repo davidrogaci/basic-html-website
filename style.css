@@ -5,8 +5,221 @@
   box-sizing: border-box;
 }
 
+/* Base body and container styles */
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  box-sizing: border-box;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+header,
+footer {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #222;
+  padding: 8px;
+}
+
+/* Logo styles */
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Main navigation */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header nav .logo-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation links list */
+header nav .nav-links {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation links separator */
+header nav .nav-links li:not(:last-child)::after {
+  content: "/";
+  margin-left: 8px;
+  color: #222;
+}
+
+header nav a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 16px;
+}
+
+h3 {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+p {
+  line-height: 1lh;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 36px;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  padding: 12px;
+}
+
+.hero-subtitle {
+  text-align: center;
+  color: #888;
+}
+
+/* ===== MAIN CONTENT GRID ===== */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr;
+  border: 2px solid #222;
+  margin-bottom: 24px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+/* Projects column */
+.projects-col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  border-right: 2px solid #222;
+  padding: 24px;
+}
+
+/* Projects and courses lists */
+.projects-list,
+.courses-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Experience and open source sections */
+.open-source,
+.experience-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.experience-item {
+  border-bottom: 2px solid #222;
+}
+
+/* Education column */
+.education {
+  border-left: 2px solid #222;
+  padding: 16px;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.reviews-container,
+.testimonials-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Testimonial cards */
+.review-card,
+.testimonial-item {
+  border: 2px solid #222;
+  border-radius: 16px;
+  padding: 16px;
+  width: 250px;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Quote and author styles */
+.review-card blockquote,
+.testimonial-item blockquote {
+  font-size: 1em;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.review-card cite,
+.testimonial-item cite {
+  display: block;
+  color: #bbb;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+/* ===== FORM ELEMENTS ===== */
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

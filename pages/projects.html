@@ -1,79 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic metadata and document configuration -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generic Portfolio - Projects</title>
+
+    <!-- SEO metadata and site description -->
+    <meta
+      name="description"
+      content="Explore my portfolio of web development projects including HTML/CSS websites, JavaScript applications, and React-based e-commerce solutions."
+    />
+    <meta
+      name="keywords"
+      content="web projects, portfolio, HTML, CSS, JavaScript, React, e-commerce, calculator"
+    />
+    <meta name="author" content="Generic Portfolio" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Social media sharing metadata (Open Graph) -->
+    <meta property="og:title" content="Generic Portfolio | Projects" />
+    <meta
+      property="og:description"
+      content="Explore my portfolio of web development projects including HTML/CSS websites, JavaScript applications, and React-based e-commerce solutions."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.davidrogaci.dev/projects" />
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Generic Portfolio | Projects" />
+    <meta
+      name="twitter:description"
+      content="Explore my portfolio of web development projects including HTML/CSS websites, JavaScript applications, and React-based e-commerce solutions."
+    />
+
+    <!-- Title and external resources -->
+    <title>Generic Portfolio | Projects</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="icon" href="../assets/icons/logo.svg" />
   </head>
-  <body>
+  <body class="container">
+    <!-- Main navigation header -->
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html"
-              ><img src="../assets/icons/logo.svg" alt="logo"
-            /></a>
-          </li>
+      <nav aria-label="Main navigation">
+        <a href="../index.html" class="logo-link">
+          <img
+            src="../assets/icons/logo.svg"
+            alt="logo"
+            loading="lazy"
+            class="logo"
+          />
+        </a>
+        <ul class="nav-links">
           <li><a href="../index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
           <li><a href="articles.html">Articles</a></li>
-          <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <h1>Projects</h1>
-      <section>
-        <h2>HTML Only Portfolio</h2>
-        <article>
-          <p>
-            This is my HTML Only Portfolio, a simple and clean portfolio built
-            with HTML and CSS. It showcases my projects and skills as a frontend
-            developer.
-          </p>
-          <a href="https://www.davidrogaci.dev">Visit the project</a>
-        </article>
-      </section>
-      <section>
-        <h2>Calculator</h2>
-        <article>
-          <p>
-            This is a simple calculator built with HTML, CSS, and JavaScript. It
-            allows you to calculate the total amount of a loan based on the
-            principal, interest rate, and term.
-          </p>
-          <a href="https://calculadora-prestamos-one.vercel.app/"
-            >Visit the project</a
-          >
-        </article>
-      </section>
-      <section>
-        <h2>Sneakers e-commerce site</h2>
-        <article>
-          <p>
-            This is a simple e-commerce site built with React + Vite. It allows
-            you to browse and purchase sneakers.
-          </p>
-          <a href="https://ecommerce-rodriguez.vercel.app/"
-            >Visit the project</a
-          >
-        </article>
-      </section>
-      <section>
-        <h2>Product landing page</h2>
-        <article>
-          <p>
-            This is a simple product landing page built with HTML, CSS, and
-            JavaScript. It showcases a product and allows you to purchase it.
-          </p>
-          <a href="https://jordan-1-retro-spider.vercel.app/"
-            >Visit the project</a
-          >
-        </article>
-      </section>
+      <!-- Projects grid -->
+      <div class="projects-grid">
+        <!-- Project card: HTML Portfolio -->
+        <section class="project-card">
+          <h2>HTML Only Portfolio</h2>
+          <article>
+            <p>
+              This is my HTML Only Portfolio, a simple and clean portfolio built
+              with HTML and CSS. It showcases my projects and skills as a
+              frontend developer.
+            </p>
+            <a
+              href="https://www.davidrogaci.dev"
+              class="project-link"
+              aria-label="Visit HTML Only Portfolio project"
+              >Visit the project</a
+            >
+          </article>
+        </section>
+
+        <!-- Project card: Calculator -->
+        <section class="project-card">
+          <h2>Calculator</h2>
+          <article>
+            <p>
+              This is a simple calculator built with HTML, CSS, and JavaScript.
+              It allows you to calculate the total amount of a loan based on the
+              principal, interest rate, and term.
+            </p>
+            <a
+              href="https://calculadora-prestamos-one.vercel.app/"
+              class="project-link"
+              aria-label="Visit Calculator project"
+              >Visit the project</a
+            >
+          </article>
+        </section>
+
+        <!-- Project card: Sneakers e-commerce -->
+        <section class="project-card">
+          <h2>Sneakers e-commerce site</h2>
+          <article>
+            <p>
+              This is a simple e-commerce site built with React + Vite. It
+              allows you to browse and purchase sneakers.
+            </p>
+            <a
+              href="https://ecommerce-rodriguez.vercel.app/"
+              class="project-link"
+              aria-label="Visit Sneakers e-commerce project"
+              >Visit the project</a
+            >
+          </article>
+        </section>
+
+        <!-- Project card: Product landing page -->
+        <section class="project-card">
+          <h2>Product landing page</h2>
+          <article>
+            <p>
+              This is a simple product landing page built with HTML, CSS, and
+              JavaScript. It showcases a product and allows you to purchase it.
+            </p>
+            <a
+              href="https://jordan-1-retro-spider.vercel.app/"
+              class="project-link"
+              aria-label="Visit Product landing page project"
+              >Visit the project</a
+            >
+          </article>
+        </section>
+      </div>
     </main>
-    <footer><p>Copyright 2025 Generic Portfolio</p></footer>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made only for practice.</p>
+    </footer>
   </body>
 </html>
